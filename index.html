@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/assets/img/m5.ico" type="image/x-icon">
+    <title>Escuela de Música Mozart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div> 
+    <header>
+        <section>
+            <nav class="navbar">
+                <a class="logo" href="#inicio">
+                    <div>
+                        <img src="/assets/img/m5.png" alt="Logo">
+                        <p>La mejor Opción</p>
+                    </div>
+                </a>
+                <ul class="navlist">
+                    <li><a class="link" href="#inicio">Inicio</a></li>
+                    <li><a class="link" href="#sede">Sede</a></li>
+                    <li><a class="link" href="#programas">Programas</a></li>
+                    <li><a class="link" href="#docentes">Docentes</a></li>
+                    <li><a class="link" href="#nosotros">Nosotros</a></li>
+                    <li><a class="link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Botón para controlar la música -->
+            <div class="container-sound">
+                <input type="checkbox" id="check" style="display: none;">
+                <label for="check" class="button"></label>
+                <!-- Archivo de audio -->
+                <audio id="background-music" loop autoplay></audio>
+            </div>
+        </section>
+    </header>
+    <div class="player-controls">
+        <div id="waveform"></div>
+    </div>
+    <main>
+        <section id="inicio">
+            <div class="slider" style=" --width: 10rem; --height: 2.5rem; --quantity: 15;">
+                <div class="list">
+                    <div class="item item1"><a href="#">Música</a></div>
+                    <div class="item item2"><a href="#">Producción</a></div>
+                    <div class="item item3"><a href="#">Cursos libres</a></div>
+                    <div class="item item4"><a href="#">Danza</a></div>
+                    <div class="item item5"><a href="#">Ballet</a></div>
+                    <div class="item item6"><a href="#">Pintura</a></div>
+                    <div class="item item7"><a href="#">Fotografia</a></div>
+                </div>
+            </div>
+            <!-- <img src="/assets/img/pintura fondo logo.png" alt=""> -->
+            <div class="contenido">
+                <div class="box-title">
+                    <h2 data-text="Escuela de Música">Escuela de Música</h2>
+                    <h1>Mozart</h1>
+                </div>
+                <div class="box-leyend">
+                    <h2>Donde la creatividad y la innovación se encuentran con el Arte</h2>
+                </div>
+            </div>
+        </section>
+        <section id="sede">
+            <h1>Sede</h1>
+        </section>
+        <section id="programas">
+            <h1>Programas</h1>
+        </section>
+        <section id="docentes">
+            <h1>Docentes</h1>
+        </section>
+        <section id="nosotros">
+            <h1>Nosotros</h1>
+        </section>
+        <section id="contacto">
+            <h1>Contacto</h1>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
